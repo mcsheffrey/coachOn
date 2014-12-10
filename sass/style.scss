@@ -1,0 +1,61 @@
+/* ==========================================================================
+   $CONTENTS
+   ========================================================================== */
+/**
+ * VARIABLES..................
+ * MIXINS.....................
+ * BASE.......................Base stylings
+ * SPACING....................
+ * TYPOGRAPHY.................Headings, paragraphs, quotes
+ * HEADER.....................
+ * FOOTER.....................
+ * POST.......................
+ */
+
+/**
+ * Widths
+ */
+
+/* ==========================================================================
+   $MIXINS
+   ========================================================================== */
+@import 'bourbon/bourbon';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+body .no-transition {
+  @include transition(none !important);
+}
+
+
+// CSS normalize.css reset
+@import "normalize";
+
+// See modules/_base.scss
+@import "modules/base";
+@import "modules/spacing";
+@import "partials/typography";
+
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+@import "partials/main";
+@import "partials/comments";
+
+// HTML5 Boilerpate helpers
+@import "modules/helpers";
