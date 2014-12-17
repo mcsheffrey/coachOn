@@ -467,7 +467,7 @@
         <div class="page">
             <header class="header-schedule clearfix">
                 <time class="schedule-header-date">Tuesday, May 29th, 2014</time>
-                <time class="schedule-header-time">9:18<span>am</span></time>
+                <time class="schedule-header-time">8:23<span>am</span></time>
             </header>
             <div class="schedule-date-picker">
                 <a class="schedule-nav schedule-nav-prev" href="#">NEXT</a>
@@ -527,167 +527,263 @@
                 </div>
                 <a class="schedule-nav schedule-nav-next" href="#">PREV</a>
             </div>
-            <div class="schedule-planner">
-                <div class="schedule-current-time"></div>
-                <div class="schedule-hour">
-                    <div class="schedule-planner-hour">7:00am</div>
-                    <div class="schedule-slot"></div>
-                    <div class="schedule-slot"></div>
-                </div>
-                <div class="schedule-hour">
-                    <div class="schedule-planner-hour">8:00am</div>
-                    <div class="schedule-slot schedule-ended">
-                        <img class="schedule-type left" src="/img/icon-schedule-sms.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-check.svg" />
-                        <div class="schedule-title">Robert Mondavi</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-ended">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-plan.svg" />
-                        <div class="schedule-title">Linda Singleterry</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-error">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-alert.svg" />
-                        <div class="schedule-title">Bob Smith</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-error">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-alert.svg" />
-                        <div class="schedule-title">Leroy Blankenship</div>
-                        <div class="schedule-subtitle">Missing Info Paper HA Call</div>
-                    </div>
-                    <div class="schedule-slot">
-                        <div class="schedule-break">
-                            <span>BREAK</span>
+            <div class="team-schedule">
+                <div class="team-schedule-container">
+                    <div class="team-schedule-users"></div>
+                    <div class="team-schedule-scroll">
+                        <div class="team-schedule-calendar" style="width: 8000px;">
+                            <div class="team-schedule-current-time" style="left: 8%;"></div>
+                            <div class="team-schedule-timeline clearfix">
+                                <div class="team-schedule-hour">
+                                    <span>7:00am</span>
+                                </div>
+                                <div class="team-schedule-hour" id="8:00am">
+                                    <span>8:00am</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>9:00am</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>10:00am</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>11:00am</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>12:00am</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>1:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>2:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>3:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>4:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>5:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>6:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>7:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>8:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>9:00pm</span>
+                                </div>
+                                <div class="team-schedule-hour">
+                                    <span>10:00pm</span>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 6%; left: 6%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-green"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 12%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot team-schedule-slot-red"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-yellow"><img src="http://api.randomuser.me/portraits/med/women/51.jpg" alt=""></div>
+                                    <div class="team-schedule-slot team-schedule-slot-red"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-green"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 18%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 18%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix"></div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 6%; left: 6%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-green"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 18%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix"></div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 6%; left: 6%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-green"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 18%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-blank"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
+                            <div class="team-schedule-user-timeline clearfix"></div>
+                            <div class="team-schedule-user-timeline clearfix">
+                                <div class="team-schedule-availability" style="width: 6%; left: 6%;"></div>
+                                <div class="team-schedule-user-timeline-group">
+
+                                </div>
+                                <div class="team-schedule-user-timeline-group">
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot team-schedule-slot-green"></div>
+                                    <div class="team-schedule-slot"></div>
+                                    <div class="team-schedule-slot"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="schedule-hour">
-                    <div class="schedule-planner-hour">9:00am</div>
-                    <div class="schedule-slot schedule-success" id="schedule-click">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-close.svg" />
-                        <div class="schedule-title">Robert Mondavi</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                    </div>
-                    <div class="schedule-slot">
-                    </div>
-                    <div class="schedule-slot">
-                    </div>
-                    <div class="schedule-slot">
-                    </div>
-                </div>
-                <div class="schedule-hour">
-                    <div class="schedule-planner-hour">10:00am</div>
-                    <div class="schedule-slot">
-                        <div class="schedule-break" style="height: 150px;">
-                            <span>LUNCH</span>
+                <div class="schedule-slider-container">
+                    <div class="schedule-slider clearfix">
+                        <div class="schedule-slider-slot">7am</div>
+                        <div class="schedule-slider-slot" data-scroll="8:00am">8am</div>
+                        <div class="schedule-slider-slot">9am</div>
+                        <div class="schedule-slider-slot">10am</div>
+                        <div class="schedule-slider-slot">11am</div>
+                        <div class="schedule-slider-slot">12am</div>
+                        <div class="schedule-slider-slot">1pm</div>
+                        <div class="schedule-slider-slot">2pm</div>
+                        <div class="schedule-slider-slot">3pm</div>
+                        <div class="schedule-slider-slot">4pm</div>
+                        <div class="schedule-slider-slot">5pm</div>
+                        <div class="schedule-slider-slot">6pm</div>
+                        <div class="schedule-slider-slot">7pm</div>
+                        <div class="schedule-slider-slot">8pm</div>
+                        <div class="schedule-slider-slot">9pm</div>
+                        <div class="schedule-slider-slot">10pm</div>
+                        <div class="schedule-slider-drag">
+                            <div class="slider-drag-handle slider-drag-handle-left"></div>
+                            <div class="slider-drag-handle slider-drag-handle-right"></div>
                         </div>
-                    </div>
-                    <div class="schedule-slot">
-                    </div>
-                    <div class="schedule-slot">
-                    </div>
-                    <div class="schedule-slot schedule-ended">
-                        <img class="schedule-type left" src="/img/icon-schedule-secure.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-check.svg" />
-                        <div class="schedule-title">Robert Mondavi</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-ended">
-                        <img class="schedule-type left" src="/img/icon-schedule-message.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-plan.svg" />
-                        <div class="schedule-title">Linda Singleterry</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-error">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-alert.svg" />
-                        <div class="schedule-title">Bob Smith</div>
-                        <div class="schedule-subtitle">Initial Outreach Call</div>
-                        
-                    </div>
-                    <div class="schedule-slot schedule-error">
-                        <img class="schedule-type left" src="/img/icon-schedule-phone.svg" />
-                        <img class="schedule-action right" src="/img/icon-schedule-alert.svg" />
-                        <div class="schedule-title">Leroy Blankenship</div>
-                        <div class="schedule-subtitle">Missing Info Paper HA Call</div>
-                        
                     </div>
                 </div>
             </div>
 
-            <div class="unscheduled">
-                <h2>Overdue</h2>
-                <div class="unscheduled-box">
-                    <header class="clearfix">
-                        <div class="unscheduled-title left">Bob S.</div>
-                        <img class="unscheduled-phone right" src="/img/icon-schedule-phone.svg" />
-                        <div class="unscheduled-language right">EN</div>
-                        
-                    </header>
-                    <div class="unscheduled-subtitle">Progress Appointment</div>
-                    <div class="unscheduled-description">Second Reminder Secure Message</div>
-                </div>
-
-                <div class="unscheduled-box">
-                    <header class="clearfix">
-                        <div class="unscheduled-title left">Bob S.</div>
-                        <img class="unscheduled-phone right" src="/img/icon-schedule-message.svg" />
-                        <div class="unscheduled-language language-red right">EN</div>
-                        
-                    </header>
-                    <div class="unscheduled-subtitle">Progress Appointment</div>
-                    <div class="unscheduled-description">Second Reminder Secure Message</div>
-                </div>
-
-                <div class="unscheduled-box">
-                    <header class="clearfix">
-                        <div class="unscheduled-title left">Bob S.</div>
-                        <img class="unscheduled-phone right" src="/img/icon-schedule-secure.svg" />
-                        <div class="unscheduled-language language-red right">EN</div>
-                        
-                    </header>
-                    <div class="unscheduled-subtitle">Progress Appointment</div>
-                    <div class="unscheduled-description">Second Reminder Secure Message</div>
-                </div>
-
-                <div class="mt40">
-                    <h2>Unscheduled</h2>
-                    <div class="unscheduled-box">
-                        <header class="clearfix">
-                            <div class="unscheduled-title left">Bob S.</div>
-                            <img class="unscheduled-phone right" src="/img/icon-schedule-phone.svg" />
-                            <div class="unscheduled-language right">EN</div>
-                            
-                        </header>
-                        <div class="unscheduled-subtitle">Progress Appointment</div>
-                        <div class="unscheduled-description">Second Reminder Secure Message</div>
-                    </div>
-
-                    <div class="unscheduled-box">
-                        <header class="clearfix">
-                            <div class="unscheduled-title left">Bob S.</div>
-                            <img class="unscheduled-phone right" src="/img/icon-schedule-message.svg" />
-                            <div class="unscheduled-language right">EN</div>
-                            
-                        </header>
-                        <div class="unscheduled-subtitle">Progress Appointment</div>
-                        <div class="unscheduled-description">Second Reminder Secure Message</div>
-                    </div>
-                </div>
-
-            </div>
         </div>
+        
+
+
         <div class="schedule-modal">
             <img class="schedule-modal-user" src="/img/schedule-user.jpg" />
             <div class="schedule-modal-language">EN</div>
@@ -701,8 +797,7 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="/js/vendor/jquery-ui-dragdrop.js"></script>
-        <script src="/js/vendor/jquery-ui-sortable.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <script src="/js/vendor/jquery.hideseek.min.js"></script>
         <script src="js/vendor/jquery.easydropdown.min.js"></script>
         <script src="js/plugins.js"></script>

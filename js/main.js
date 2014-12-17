@@ -152,8 +152,84 @@
     }
 
     $('#schedule-click').on('click', function() {
-      $('.schedule-modal').addClass('show-modal');
+      var $this = $(this),
+          modalLeft = $this.offset().left + 25,
+          modalTop = $this.offset().top + 25;
+
+      $this.addClass('active');
+
+      $('.schedule-modal').css({
+        top: modalTop,
+        left: modalLeft
+      }).addClass('show-modal')
+
+      // $('body').one('click', function() {
+      //   $this.removeClass('active');
+      //   $('.schedule-modal').removeClass('show-modal');
+      // })
     })
+
+    $('.schedule-modal').on('click', function() {
+        $('#schedule-click').removeClass('active')
+        $('.schedule-modal').removeClass('show-modal');
+    })
+
+    var scheduleDateSlide = 1;
+
+    $('.schedule-nav-next').on('click', function(event) {
+      var scheduleMove = -scheduleDateSlide*102 + 'px';
+      console.log(scheduleMove);
+      
+      $('.schedule-date-content').css('transform', 'translate3d(0,' + scheduleMove + ',0)')
+      scheduleDateSlide++;
+      event.preventDefault()
+    })
+
+    // random users
+    $.ajax({
+      url: 'http://api.randomuser.me/?results=10',
+      dataType: 'json',
+      success: function(data){
+        console.log(data);
+        var teamScheduleUsers = '';
+
+        for (var i = 0; i < data.results.length; i++) {
+          teamScheduleUsers += '<div class="team-schedule-user"><img src="' + data.results[i].user.picture.medium + '" /></div>'
+        };
+
+        console.log(teamScheduleUsers);
+
+        $('.team-schedule-users').html(teamScheduleUsers)
+      }
+    });
+
+    $( ".schedule-slider-drag" ).resizable({
+      handles: 'e, w',
+      grid: 60,
+      minHeight: 80,
+      maxHeight: 80,
+      resize: function( event, ui ) {
+        console.log(event, ui);
+        var size = ui.size.width/60
+        $('.team-schedule-calendar').width(8000/size)
+      }
+    }).draggable({
+      containment: $('.schedule-slider-container'),
+      grid: [ 60, 60 ],
+      stop: function(event, ui) {
+        console.log(event, ui);
+        var scrollTo = ui.position.left/60;
+        console.log(scrollTo);
+
+        var scrollOffset = $('.team-schedule-hour').eq(scrollTo).offset().left - $('.team-schedule-scroll').offset().left
+        $('.team-schedule-scroll').scrollLeft(scrollOffset);
+      }
+    });
+
+    
+
+    
+    
 
     // Make stat containers dropable
     // $('.table-activity').droppable({
